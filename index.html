@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Numbers Game</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body onload="init()">
+    <div class="timer element">Click <span>1</span> to start</div>
+    <button class="element" onclick="onReset()">reset</button>
+    <div class="next-number element">1</div>
+    <div class="difficulty">
+        <input type="radio" id="radio-one" name="switch" value="16" checked />
+        <label for="radio-one">Easy (16)</label>
+        <input type="radio" id="radio-two" name="switch" value="25" />
+        <label for="radio-two">Hard (25)</label>
+        <input type="radio" id="radio-three" name="switch" value="36" />
+        <label for="radio-three">Extreme (36)</label>
+    </div>
+
+    <table>
+        <tbody class="table-body"></tbody>
+    </table>
+    <script src="./js/main.js"></script>
+    <script src="./util/util.js"></script>
+</body>
+
+</html>

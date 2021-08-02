@@ -1,0 +1,102 @@
+.difficulty {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+
+}
+
+.difficulty input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.difficulty label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.difficulty label:hover {
+	cursor: pointer;
+}
+
+.difficulty input:checked + label {
+    background: linear-gradient(to bottom, #ffee00, #ffa023);
+	box-shadow: none;
+}
+
+.difficulty label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.difficulty label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+
+.table-body td{
+    padding: 20px;
+    width: 28px;
+    background: linear-gradient(to bottom, #ffee00, #ffa023);
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+body{
+    background-color: rgba(187, 187, 187, 0.774);
+}
+
+button{
+    top: 5px;
+    left: 150px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    
+}
+button:hover{
+    cursor: pointer;
+}
+
+.timer{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.timer span{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.next-number{
+    top: 5px;
+    left: 250px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    height:23px
+
+}
+
+.element{
+    background: linear-gradient(to bottom, #e4b9a8, #f0f33c);
+    padding: 10px;
+    border-radius: 5px;
+}
